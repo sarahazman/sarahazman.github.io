@@ -1,10 +1,11 @@
 * { box-sizing: border-box; }
 
-body {
+html, body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	font-family: 'Playfair Display', sans-serif;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
 	font-color: #37282f;
 }
 
@@ -27,27 +28,25 @@ ul {
 }
 
 .header_list {
+	font-weight: bold;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	position: absolute;
 }
 
-.header_list li, .baha li {
+.header_list li, .navigation li {
 	margin: 1em 2em;
 	white-space: nowrap;
 }
 
 .header_list li:first-child {
-	text-align: center;
-	margin-right: 5px;
-}
-
-.header_list li:nth-last-child(2) {
+	text-align: right;
 	flex: 1;
 }
 
-.baha {
+.navigation {
+	font-weight: bold;
 	width: 100%;
 	padding-top: 5%;
 	position: absolute;
@@ -55,7 +54,7 @@ ul {
 	text-align: center;
 }
 
-.baha ul, .baha li {
+.navigation ul, .navigation li {
 	display: inline;
 }
 
@@ -77,7 +76,7 @@ ul {
 
 #menu th, td {
 	text-decoration: none;
-	letter-spacing: 2pt;
+	letter-spacing: 1pt;
 	margin-left: 10%;
 	text-align: left;
 }
@@ -309,7 +308,7 @@ h1.collection {
 }
 
 .about_desc {
-	margin: 30% 15%;
+	margin: 30% 20%;
 }
 
 .about_desc h1 {
@@ -347,7 +346,7 @@ h1.collection {
 }
 
 .mailing_img img {
-	width: 500px;
+	width: 400px;
 	height: auto;
 }
 
@@ -394,7 +393,8 @@ input:focus {
 	outline: none;
 }
 
-/*.footer {
+.footer {
+	width: 100%;
 	background-color: rgba(161,237,192,1);
 	padding: 1.25rem 1.875rem;
     display: flex;
@@ -427,7 +427,7 @@ ul.column_arrangement {
     -webkit-column-gap: 20px;
     column-count: 2;
     column-gap: 20px;
-}*/
+}
 
 /* When the screen is less than 786 pixels wide, move favicons and logo to sidebar menu. Hides navigation bar. */
 @media screen and (max-width: 786px) {
