@@ -132,14 +132,17 @@ ul, li {
 
 	.contact {
 		height: 100%;
-		padding-top: 10em;
 	}
 
 	.contact, .about, .navbar {
 		max-width: 100%;
 	}
 
-	.contact h1, .fa-envelope:before {
+	.contact h1 {
 		display: none;
+	}
+
+	.contact p {
+		padding-top: 10em;
 	}
 }
