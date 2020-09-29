@@ -101,6 +101,7 @@ ul, li {
 }
 
 .contact {
+	color: #fff;
 	background-color: blue;
 	font-family: 'Poppins', sans-serif;
 	padding: 2em;
@@ -108,7 +109,7 @@ ul, li {
 }
 
 .contact h1 {
-	font-size: 70px;
+	font-size: 50px;
 }
 
 .contact p {
