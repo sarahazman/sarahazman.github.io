@@ -1,91 +1,137 @@
-* {
-	height: 100%;
-    margin: 0;
+html, body {
+    height: 100%;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-a:link {
-	color: white;
+ul, li {
+	list-style-type: none;
+	padding: 0;
 }
 
-.title {
-	position: absolute;
-	font-family: 'Suranna', serif;
-	padding: 13em 35em 0 0;
-	right: 0;
+.navbar {
+	font-size: 16px;
+	display: flex;
+	margin-bottom: 10px;
+	padding: 0;
+	width: 100%;
 }
 
-.title p {
-	position: absolute;
-	font-size: 100px;
-	line-height: 70%;
+.navbar a:link {
+	color: black;
+	text-decoration: none;
 }
 
-.title p:first-child {
-	font-size: 35px;
+.navbar a:hover {
+	border-bottom: 3px solid #000;
+	padding-bottom: 4px;
+	transition: ease-in 0.25s;
 }
 
-.parallax, .parallax2 {
+.navbar li:first-child {
+	padding-left: 10px;
+ 	margin-right: auto;
+}
+
+.main {
 	height: 100%;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
-.parallax {
-	background-image: url('../img/mixkit.png');
-}
-
-.nav {
-	display: block;
+.links {
+	font-size: 70px;
 	text-align: center;
-	word-spacing: 2em;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	font-size: 15px;
 	text-transform: uppercase;
+	color: white;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #1e166b;
+}
+
+.links a:link {
+	color: white;
+	text-decoration: none;
+}
+
+.links a:hover {
+	color: #ed7124;
+}
+
+.plus a:link {
+	text-decoration: none;
+}
+
+.plus a:hover {
+	color: #ed7124;
+}
+
+.plus h1 {
+	text-align: center;
+	font-size: 120px;
+}
+
+.about {
+	height: 100%;
+	text-align: center;
+	font-size: 18px;
+	padding-top: 4em;
+}
+
+.left-div {
+	display: inline-block;
+  	max-width: 600px;
+  	margin: 15px;
+  	vertical-align: top;
+}
+
+.right-div {
+  display: inline-block;
+  max-width: 400px;
+  text-align: justify;
+  margin: 15px;
+}
+
+.right-div h1 {
+	font-size: 50px;
+	color: #ed7124;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #1e166b;
+}
+
+.right-div p {
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact {
+	background-color: blue;
+	font-family: 'Poppins', sans-serif;
 	padding: 2em;
-}
-
-/*================================================
-Start Important Part
-==================================================*/
-.underline--magical {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  transition: background-size 0.25s ease-in;
-}
-.underline--magical:hover {
-  background-size: 100% 88%;
-}
-
-/*================================================
-End Important Part
-==================================================*/
-
-.banner p:first-child {
-	font-family: 'Suranna', serif;
 	text-align: center;
-	color: #b5076b;
-	padding-top: 1.5em;
-	font-size: 30px;
-	height: 20%;
 }
 
-.banner p {
-	margin: auto;
-	width: 60%;
-	font-family: 'Montserrat', sans-serif;
-	text-align: center;
-	height: 15%;
-	line-height: 20pt;
+.contact h1 {
+	font-size: 70px;
 }
 
-.parallax2 {
-	background-image: url('../img/mixkit2.png');
+.contact p {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 736px) {
+	.about {
+		padding: 2em;
+	}
+
+	.left-div img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.contact, .about, .navbar {
+		max-width: 100%;
+	}
+
+	.contact h1 {
+		display: none;
+	}
 }
