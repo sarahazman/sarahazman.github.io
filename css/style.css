@@ -71,7 +71,7 @@ ul, li {
 
 .about {
 	text-align: center;
-	font-size: 18px;
+	font-size: 16px;
 	padding-top: 4em;
 }
 
@@ -116,6 +116,10 @@ ul, li {
 	font-weight: bold;
 }
 
+.fa-linkedin-in:before, .fa-envelope:before {
+	color: #ed7124;
+}
+
 @media screen and (max-width: 736px) {
 	.about {
 		padding: 2em;
@@ -128,13 +132,14 @@ ul, li {
 
 	.contact {
 		height: 100%;
+		padding-top: 10em;
 	}
 
 	.contact, .about, .navbar {
 		max-width: 100%;
 	}
 
-	.contact h1 {
+	.contact h1, .fa-envelope:before {
 		display: none;
 	}
 }
