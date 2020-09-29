@@ -70,7 +70,6 @@ ul, li {
 }
 
 .about {
-	height: 100%;
 	text-align: center;
 	font-size: 18px;
 	padding-top: 4em;
@@ -118,10 +117,6 @@ ul, li {
 }
 
 @media screen and (max-width: 736px) {
-	.links {
-		font-size: 30px;
-	}
-
 	.about {
 		padding: 2em;
 	}
@@ -129,6 +124,10 @@ ul, li {
 	.left-div img {
 		max-width: 100%;
 		height: auto;
+	}
+
+	.contact {
+		height: 100%;
 	}
 
 	.contact, .about, .navbar {
