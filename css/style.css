@@ -116,7 +116,11 @@ ul, li {
 	font-weight: bold;
 }
 
-.fa-linkedin-in:before, .fa-envelope:before {
+.fa-linkedin-in:before {
+	color: #ed7124;
+}
+
+.fa-envelope:before {
 	color: #ed7124;
 }
 
