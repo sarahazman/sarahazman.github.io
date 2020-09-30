@@ -126,6 +126,11 @@ ul, li {
 }
 
 @media screen and (max-width: 736px) {
+	.links {
+		font-size: 40px;
+		line-height: 1.7;
+	}
+
 	.about {
 		padding: 2em;
 	}

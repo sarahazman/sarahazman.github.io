@@ -1,21 +1,15 @@
+* {
+	font-family: 'Playfair Display', sans-serif;
+	font-color: #37282f;
+	overflow-x: hidden;
+}
+
 body { margin: 0; }
 .bg-main {
 	width: 100vw;
 	height: 100vh;
 	background: url('../img/main.jpg') no-repeat center center fixed; 
  	background-size: cover;
-}
-
-/*html { 
-  background: url('../img/main.jpg') no-repeat center center fixed; 
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}*/
-
-* {
-	font-family: 'Playfair Display', sans-serif;
-	font-color: #37282f;
 }
 
 a:link {
@@ -128,15 +122,6 @@ a:hover {
 	top: 100%;
 	background-color: #ebe1e0;
 	background-size: cover;
-}
-
-.triangle {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 100vh 100vw 0 0;
-	border-color: #dcccc9 transparent transparent transparent;
-
 }
 
 .history {
@@ -278,18 +263,47 @@ input:focus, textarea:focus {
 		grid-row: row;
 	}
 
+/* Bottom links */
+.bottom {
+	width: 100%;
+	background-color: #37282f;
+	padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer p, li {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.section_wrapper {
+	padding: 1.25rem 9rem 0rem 4.25rem;
+	width: 25%;
+}
+
+.section_item {
+	padding: 1.25rem 1rem;
+	min-width: 12.5rem;
+}
+
+.section_item ul {
+	padding-left: 0;
+	list-style: none;
+}
+
 /* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
 	.top-nav a {display: none;}
 	.top-nav a.icon {
 		padding-right: 2em;
     float: right;
     display: block;
   }
-}
+}*/
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   .top-nav.responsive {position: relative;}
   .top-nav.responsive a.icon {
   	color: #37282f;
@@ -304,7 +318,7 @@ input:focus, textarea:focus {
     display: block;
     text-align: center;
   }
-}
+}*/
 
 
 /* {
@@ -492,3 +506,35 @@ Start Important Part
 /*================================================
 End Important Part
 ==================================================*/
+
+@media screen and (max-width: 786px) {
+	.top-nav { display: none; }
+
+	.container { margin: 0; }
+
+	.tagline {
+		font-size: 40px;
+		margin: 0 6%;
+	}
+
+	.footer { left: 50px; }
+
+	.history { 
+		width: 75%;
+		margin: 3em;
+		left: 0;
+	}
+	.history p { padding: 0; }
+
+	.box2 { display: none; }
+
+	.container2 {
+		width: 90%;
+		margin: 5%;
+	}
+
+	.section_wrapper {
+		padding: 1.25rem 1rem;
+		width: 100%;
+	}
+}
