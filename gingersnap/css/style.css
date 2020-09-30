@@ -407,18 +407,20 @@ input:focus {
 	float: left;
 	width: 50%;
 	margin-top: 13%;
- 	text-align: center;
- 	position: absolute;
+	padding-right: 8%;
+	text-align: right;
 }
 
 .product_img img {
-
+	width: 200px;
+	height: auto;
 }
 
 .product_desc {
 	float: right;
 	padding-top: 13%;
 	width: 50%;
+	height: 100%;
 }
 
 .product_desc h1 {
@@ -499,7 +501,7 @@ ul.column_arrangement {
 		width: 100%;
 	}
 
-	.left, .right, .subscribe, .product {width: 100%;}
+	.left, .right, .subscribe, .product, .product_img, .product_desc {width: 100%;}
 	.right { height: 50%; }
 	.about_img img {width: 60%;}
 	.mailing_img img {display:none;}
@@ -508,10 +510,13 @@ ul.column_arrangement {
 	.subscribe input[type="text"] { display:none; }
 	.subscribe input[type="submit"] {display: none;}
 
+	.product_img {
+		text-align: center;
+		padding: 8% 0 0 0;
+	}
+
 	.product_desc {
-		float: none;
-		position: absolute;
-		width: 100%;
+		padding: 15% 8% 8% 8%;
 	}
 
 }
