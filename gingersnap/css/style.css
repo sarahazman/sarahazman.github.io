@@ -20,9 +20,8 @@ a:hover {
   	background-repeat: repeat-x;
   	background-size: 20%;
   	border-bottom: 0;
-  	padding-bottom: .3em;
+  	padding-bottom: .5em;
   	text-decoration: none;
-	transition: ease-in 0.25s;
 }
 
 ul {
