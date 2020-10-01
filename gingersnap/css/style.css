@@ -14,6 +14,17 @@ a:link {
 	text-decoration: none;
 }
 
+a:hover {
+	background-image: url("img/squiggle.svg");
+  	background-position: bottom;
+  	background-repeat: repeat-x;
+  	background-size: 20%;
+  	border-bottom: 0;
+  	padding-bottom: .3em;
+  	text-decoration: none;
+	transition: ease-in 0.25s;
+}
+
 ul {
 	list-style: none;
 	padding-left: 0;
