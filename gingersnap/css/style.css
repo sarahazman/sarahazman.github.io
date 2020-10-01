@@ -187,13 +187,15 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 	background-color: rgba(161,237,192,1);
 }
 
-.main img {
+.img_desktop {
 	width: 850px;
 	height: auto;
 	display: block;
 	margin: auto;
 	padding-top: 9%;
 }
+
+.img_mobile { display: none; }
 
 /*.title {
 	width: 500px;
@@ -355,6 +357,13 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 	margin-top: 7%;
 }
 
+.left2 {
+	float: left;
+	width: 50%;
+	height: 100%;
+	background-color: white;
+}
+
 .mailing_img {
 	float: left;
 	width: 50%;
@@ -508,20 +517,18 @@ ul.column_arrangement {
 
 	input[type="checkbox"]:checked ~ #menu { width: 100%; }
 
-	.main img {
-		width: 100%;
-		height: auto;
-		padding-top: 30%;
-	}
+	.img_desktop { display: none; }
+	.img_mobile { display: block; height: 100%; width: 100%; }
 
 	.content_img {
 		width: 100%;
 	}
 
 	.left, .right, .subscribe, .product, .product_img, .product_desc {width: 100%;}
+	.left2 { display: none; }
 	.right { height: 50%; }
 	.about_img img {width: 60%;}
-	.mailing_img img {display:none;}
+	
 	.subscribe h1 { font-size: 50px; }
 
 	.subscribe input[type="text"] { display:none; }
