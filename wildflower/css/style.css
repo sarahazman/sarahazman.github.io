@@ -17,7 +17,6 @@ input[type=checkbox] {
 	height: 100%;
 	position: fixed;
 	transform: translateX(-400px);
-    transition: transform 400ms ease-in-out;
 }
 
 .bg-main {
@@ -137,6 +136,14 @@ a:hover {
 	top: 100%;
 	background-color: #ebe1e0;
 	background-size: cover;
+}
+
+.about img {
+	height: 600px;
+	width: auto;
+	position: absolute;
+	margin: 5%;
+	padding-left: 5em;
 }
 
 .history {
@@ -289,12 +296,12 @@ input:focus, textarea:focus {
 .footer p, li {
 	font-size: 14px;
 	line-height: 20px;
-	color: white;
 }
 
 .section_wrapper {
 	padding: 1.25rem 9rem 0rem 4.25rem;
 	width: 25%;
+	color: white;
 }
 
 .section_item {
@@ -306,222 +313,8 @@ input:focus, textarea:focus {
 .section_item ul {
 	padding-left: 0;
 	list-style: none;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
-/*@media screen and (max-width: 600px) {
-	.top-nav a {display: none;}
-	.top-nav a.icon {
-		padding-right: 2em;
-    float: right;
-    display: block;
-  }
-}*/
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-/*@media screen and (max-width: 600px) {
-  .top-nav.responsive {position: relative;}
-  .top-nav.responsive a.icon {
-  	color: #37282f;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .top-nav.responsive a {
-    float: none;
-    background-color: white;
-    padding: 1em 2em;
-    display: block;
-    text-align: center;
-  }
-}*/
-
-
-/* {
-	height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-a:link {
 	color: white;
 }
-
-.bg-main {
-	height: 100%;
-	background-attachment: fixed;
-	background-position: center cover;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.bg-main {
-	background-image: url('../img/main.jpg');
-}
-
-.nav {
-	display: block;
-	position: absolute;
-	word-spacing: 2em;
-	letter-spacing: 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	font-size: 13px;
-	text-transform: uppercase;
-	padding: 1em 2em;
-	width: 100%;
-}
-
-.right {
-	float: right;
-}
-
-.title {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
-	font-size: 100px;
-	text-align: center;
-	color: #fff;
-	letter-spacing: 10px;
-	padding-top: 2em;
-	top: 50%;
-	left: 50%;
-}
-
-.title .creamery {
-	font-size: 60px;
-}
-
-.order {
-	font-family: 'Montserrat', sans-serif;
-	border: none;
-	position: absolute;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	height: 10%;
-	background-color: #bc658d;
-	color: black;
-	padding: 5px 40px;
-	font-size: 18px;
-	margin: 0;
-	top: 70%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	cursor: pointer;
-}
-
-.banner {
-	background-color: #ffc2ca;
-	height: 80%;
-}
-
-.intro {
-	width: 50%;
-	padding-top: 1.5em;
-	margin: auto;
-	font-family: 'Montserrat', sans-serif;
-	text-align: center;
-	font-size: 30px;
-	font-weight: bold;
-	color: white;
-}
-
-/*.product {
-	height: 30%;
-}
-/*.listing {
-  list-style: none;
-  margin: 2em;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
-}
-
-.product_img {
-	text-align: center;
-	background-color: #e5e5e5;
-  	display: block;
-	max-width: 90%;
-	height: 40%;
-	display: flex;
-	flex-direction: column;
-}
-
-.product_info p {
-	font-family: 'Bebas Neue', cursive;
-	font-color: black;
-	font-size: 20px;
-	font-weight: bold;
-	padding-top: 1em;
-}*/
-
-.products {
-	display: flex;
-	flex-wrap: wrap;
-	height: auto;
-}
-
-.product_card {
-	padding: 2%;
-	flex-grow: 1;
-	/*flex-basis: 5%;*/
-	text-align: center;
-	margin-top: auto;
-}
-
-.product_img img {
-	max-width: 100%;
-	height: auto;
-}
-
-.product_info {
-	height: auto;
-	margin-top: auto;
-}
-
-.product_info p {
-	text-align: center;
-	font-family: 'Bebas Neue', cursive;
-	font-color: black;
-	font-size: 20px;
-	font-weight: bold;
-}
-
-.add {
-	padding: 1em;
-	width: 100%;
-	display: block;
-	font-color: black;
-	border-radius: 8px;
-	background-color: #e5e5e5;
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-}
-
-
-
-/*================================================
-Start Important Part
-==================================================*/
-.underline--magical {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  transition: background-size 0.25s ease-in;
-}
-.underline--magical:hover {
-  background-size: 100% 88%;
-}
-
-/*================================================
-End Important Part
-==================================================*/
 
 @media screen and (max-width: 786px) {
 
@@ -530,79 +323,82 @@ End Important Part
 	}
 
 	input[type="checkbox"]:checked ~ #navigation {
-    transform: translateX(0); width: 100%;
-}
+    	transform: translateX(0); width: 100%;
+	}
 
-input[type=checkbox] {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    display: none;
-}
+	input[type=checkbox] {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	display: none;
+	}
 
-.sidebarIconToggle {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    cursor: pointer;
-    position: fixed;
-    z-index: 99;
-    height: 100%;
-    width: 100%;
-    top: 28px;
-    left: 25px;
-    height: 30px;
-    width: 22px;
-}
+	.sidebarIconToggle {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	cursor: pointer;
+    	position: fixed;
+    	z-index: 99;
+    	height: 100%;
+    	width: 100%;
+    	top: 28px;
+    	left: 25px;
+    	height: 30px;
+    	width: 22px;
+	}
 
-.spinner {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background-color: #000;
-}
+	.spinner {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	position: absolute;
+    	height: 3px;
+    	width: 100%;
+    	background-color: #000;
+	}
 
-.horizontal {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: relative;
-    float: left;
-    margin-top: 3px;
-}
+	.horizontal {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	position: relative;
+    	float: left;
+    	margin-top: 3px;
+	}
 
-.diagonal.part-1 {
-    position: relative;
-    transition: all 0.3s;
-    box-sizing: border-box;
-    float: left;
-}
+	.diagonal.part-1 {
+    	position: relative;
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	float: left;
+	}
 
-.diagonal.part-2 {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    position: relative;
-    float: left;
-    margin-top: 3px;
-}
+	.diagonal.part-2 {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	position: relative;
+    	float: left;
+    	margin-top: 3px;
+	}
 
-input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    opacity: 0;
-}
+	input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	opacity: 0;
+	}
 
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    transform: rotate(135deg);
-    margin-top: 8px;
-}
-input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    transform: rotate(-135deg);
-    margin-top: -9px;
-}
+	input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	transform: rotate(135deg);
+    	margin-top: 8px;
+	}
+
+	input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	transform: rotate(-135deg);
+    	margin-top: -9px;
+	}
+
+	#navigation { transition: transform 400ms ease-in-out; }
 
 	.top-nav { display: none; }
 
@@ -613,6 +409,8 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 		margin: 0 6%;
 	}
 
+	.about img { display: none; }
+
 	.footer { left: 50px; }
 
 	.history { 
@@ -620,9 +418,10 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 		margin: 3em;
 		left: 0;
 	}
+
 	.history p { padding: 0; }
 
-	.box2 { display: none; }
+	.menu { display: none; }
 
 	.container2 {
 		width: 80%;
