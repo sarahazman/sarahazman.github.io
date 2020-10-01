@@ -288,8 +288,11 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 	transition: transform .2s;
 }
 
+.content_img { cursor: pointer; }
+
 .content img:hover {
 	transform: scale(1.1);
+	cursor: pointer;
 }
 
 .info {
