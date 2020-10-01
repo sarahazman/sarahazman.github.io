@@ -15,7 +15,7 @@ a:link {
 }
 
 a:hover {
-	background-image: url("img/squiggle.svg");
+	background-image: url("https://raw.githubusercontent.com/sarahazman/sarahazman.github.io/194913ddfc7e46efd1e0fdb6f8961936a04bd04e/gingersnap/img/squiggle.svg");
   	background-position: bottom;
   	background-repeat: repeat-x;
   	background-size: 20%;
