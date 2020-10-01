@@ -87,7 +87,7 @@ End Important Part
 }
 
 .banner_bird { text-align: center; }
-.bird { width: 200px; height: auto; }
+.bird { width: 200px; height: auto; margin-top: 5%;}
 
 .parallax2 {
 	background-image: url('../img/mixkit2.png');
@@ -97,6 +97,7 @@ End Important Part
 
 .characteristics {
 	position: absolute;
+	padding-left: 30%;
 }
 
 .characteristics h1 {
@@ -113,10 +114,65 @@ End Important Part
 }
 
 .section {
-	padding: 2rem 0 0 7rem;
-	width: 30%;
+	padding: 2rem 0 0 5rem;
+	width: 50%;
 	height: 0;
 	font-family: 'Montserrat', sans-serif;
 }
 
 .section p { font-size: 15px; line-height: 1.8 }
+
+.footer {
+	width: 100%;
+	background-color: #353259;
+	padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer p, li {
+	font-size: 14px;
+	line-height: 20px;
+	color: white;
+}
+
+.section_wrapper {
+	font-family: 'Montserrat', serif;
+	padding: 5rem 9rem 0rem 4.25rem;
+	min-width: 12.5rem;
+}
+
+.section_item {
+	padding: 1.25rem 1rem;
+	min-width: 12.5rem;
+}
+
+.section_item ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+.footer, .section_wrapper, .section_item { height: 40%; }
+.footer li { height: 30%; }
+.section_item h2 { font-family: 'Suranna', serif; color: white; }
+.section_item li { font-family: 'Montserrat', serif; }
+
+@media screen and (max-width: 786px) {
+	.title {
+		width: 100%;
+		padding: 50% 10% 0 10%;
+	}
+
+	.bird { display: none; }
+
+	.wrapper { padding: 12rem 1.875rem; }
+
+	.characteristics { padding: 5%; text-align: center; }
+	.characteristics h1 { font-size: 30px; padding: 0;}
+
+	.section { width: 100%; height: 80%; padding: 1em 0 0 1em;}
+	.section2 { display: none; }
+
+	.footer { display: none; }
+
+}
