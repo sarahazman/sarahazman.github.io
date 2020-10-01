@@ -53,6 +53,7 @@ ul {
 .header_list li:first-child {
 	text-align: right;
 	flex: 1;
+	cursor: pointer;
 }
 
 .navigation {
@@ -525,6 +526,8 @@ ul.column_arrangement {
 
 	.subscribe input[type="text"] { display:none; }
 	.subscribe input[type="submit"] {display: none;}
+
+	.subscribe { height: 80%; }
 
 	.product_img {
 		text-align: center;
