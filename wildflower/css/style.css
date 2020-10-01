@@ -5,6 +5,21 @@
 }
 
 body { margin: 0; }
+
+input[type=checkbox] {
+    display: none;
+}
+
+#navigation {
+	z-index: 10;
+	background: white;
+	width: 400px;
+	height: 100%;
+	position: fixed;
+	transform: translateX(-400px);
+    transition: transform 400ms ease-in-out;
+}
+
 .bg-main {
 	width: 100vw;
 	height: 100vh;
@@ -230,7 +245,6 @@ input:focus, textarea:focus {
 .bottom h1 {
 	font-size: 16px;
 	color: white;
-	margin-top: 5em;
 }
 
 .bottom p {
@@ -275,6 +289,7 @@ input:focus, textarea:focus {
 .footer p, li {
 	font-size: 14px;
 	line-height: 20px;
+	color: white;
 }
 
 .section_wrapper {
@@ -285,6 +300,7 @@ input:focus, textarea:focus {
 .section_item {
 	padding: 1.25rem 1rem;
 	min-width: 12.5rem;
+	color: white;
 }
 
 .section_item ul {
@@ -508,6 +524,86 @@ End Important Part
 ==================================================*/
 
 @media screen and (max-width: 786px) {
+
+	.nav_wrapper li {
+		text-transform: uppercase;
+	}
+
+	input[type="checkbox"]:checked ~ #navigation {
+    transform: translateX(0); width: 100%;
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 28px;
+    left: 25px;
+    height: 30px;
+    width: 22px;
+}
+
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+}
+
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
 	.top-nav { display: none; }
 
 	.container { margin: 0; }
@@ -529,8 +625,8 @@ End Important Part
 	.box2 { display: none; }
 
 	.container2 {
-		width: 90%;
-		margin: 5%;
+		width: 80%;
+		margin: 10%;
 	}
 
 	.section_wrapper {
