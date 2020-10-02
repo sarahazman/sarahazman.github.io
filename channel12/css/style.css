@@ -1,0 +1,232 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	font-color: #37282f;
+}
+
+a:link {
+	font-family: 'Inconsolata', monospace;
+	color: #a47345;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+input[type=checkbox] { display: none; }
+
+#menu {
+	z-index: 10;
+	width: 400px;
+	height: 100%;
+	position: fixed;
+	background-color: white;
+	box-shadow: 0em 0em 0em 1.5em #ffc0b1 inset;
+	transform: translateX(-400px);
+}
+
+#menu ul {
+	padding: 20%;
+	font-size: 30px;
+	line-height: 2.5;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#menu li:first-child {
+	font-size: 20px;
+	margin-bottom: 5%;
+}
+
+.home {
+	min-height: 720px;
+    position: relative;
+    height: 100%;
+	background: url(../img/unsplash_jessicafelicio.jpg) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.top_navigation { padding: 15px; }
+
+.logo img {
+	height: 50px;
+	width: auto;
+	padding: 3px;
+	position: absolute;
+}
+
+.top_navigation_right { text-align: right; }
+.top_navigation_right a { margin: 10px; font-weight: bold; }
+
+.info {
+	background-color: #ffd9b5;
+	height: 40%;
+	padding: 7%;
+	text-align: center;
+}
+
+.info h1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.info p {
+	margin: 5% 15%;
+}
+
+.color { height: 100%; background: white; }
+
+.quote { width: 50%; float: left; }
+
+.quote p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 46px;
+	font-weight: bold;
+	padding: 20%;
+}
+
+.color_img {
+	width: 50%;
+	float: right;
+	text-align: center;
+}
+.color_img img {
+	height: auto;
+	width: 500px;
+	padding: 10%;
+}
+
+.testimonials { height: 100%; text-align: center; }
+
+.testimonial_title {
+	border-top: 5px dotted #ea9a62;
+	border-bottom: 5px dotted #ea9a62;
+	padding: 3%;
+	text-align: center;
+}
+
+.testimonial_title h1 { 
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	letter-spacing: 3pt;
+	text-transform: uppercase;
+}
+
+.reviews {
+	width: 20%;
+	display: inline-block;
+	padding: 5%;
+}
+
+.reviews img {
+	width: 300px;
+	height: 300px;
+}
+
+.reviews p { text-align: justify; }
+
+/* When the screen is less than 768 pixels wide, move favicons and logo to sidebar menu. Hides navigation bar. */
+@media screen and (max-width: 768px) {
+
+	.top_navigation { padding: 6% 1%; }
+
+	.book, .slash, .logo { display: none; }
+
+	input[type="checkbox"]:checked ~ #menu {
+    	transform: translateX(0);
+    	width: 100%;
+	}
+
+	input[type=checkbox] {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	display: none;
+	}
+
+	.hamburger_icon_toggle {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	cursor: pointer;
+    	position: fixed;
+    	z-index: 99;
+    	height: 100%;
+    	width: 100%;
+    	top: 28px;
+    	left: 25px;
+    	height: 30px;
+    	width: 22px;
+	}
+
+	.spinner {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	position: absolute;
+    	height: 3px;
+    	width: 100%;
+    	background-color: #000;
+	}
+
+	.horizontal {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	position: relative;
+    	float: left;
+    	margin-top: 3px;
+	}
+
+	.diagonal.part-1 {
+    	position: relative;
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	float: left;
+	}
+
+	.diagonal.part-2 {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	position: relative;
+    	float: left;
+    	margin-top: 3px;
+	}
+
+	input[type=checkbox]:checked ~ .hamburger_icon_toggle > .horizontal {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	opacity: 0;
+	}
+
+	input[type=checkbox]:checked ~ .hamburger_icon_toggle > .diagonal.part-1 {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	transform: rotate(135deg);
+    	margin-top: 8px;
+	}
+
+	input[type=checkbox]:checked ~ .hamburger_icon_toggle > .diagonal.part-2 {
+    	transition: all 0.3s;
+    	box-sizing: border-box;
+    	transform: rotate(-135deg);
+    	margin-top: -9px;
+	}
+
+	#menu { transition: transform 400ms ease-in-out; }
+
+	.info, .color, .quote, .color_img, .testimonials, .reviews { height: 100%; }
+	.quote, .color_img, .reviews { width: 100%; }
+	.quote p { text-align: center; padding: 15%; }
+	.color_img img { padding: 0; width: 100%; }
+
+	.testimonial_title { padding: 0; margin: 0; }
+	.reviews { padding: 0; }
+	.reviews img, .reviews p { padding: 5% 10%; }
+
+}

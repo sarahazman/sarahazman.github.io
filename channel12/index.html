@@ -1,0 +1,94 @@
+<!--ATTRIBUTES
+	Photo by Matheus Henrin from Pexels
+	Photo by Neemias Seara from Pexels
+	Photo by Ike louie Natividad from Pexels
+	Photo by cottonbro from Pexels
+
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Channel 12</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" style="text/css" href="css/style.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&Inconsolata:wght@500&display=swap" rel="stylesheet">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<!-- Mobile responsive hamburger menu -->
+		<input type="checkbox" class="open_hamburger_menu" id="open_hamburger_menu">
+			<label for="open_hamburger_menu" class="hamburger_icon_toggle">
+				<div class="spinner diagonal part-1"></div>
+    			<div class="spinner horizontal"></div>
+    			<div class="spinner diagonal part-2"></div>
+    		</label>
+    	<!-- End of mobile responsive hamburger menu -->
+
+    	<!-- Responsive menu -->
+		<div id="menu">
+			<ul>
+				<li><a href="#">Book An Appointment</a></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<!-- End of responsive menu -->
+
+		<!-- Landing page-->
+		<div class="home">
+			<div class="top_navigation">
+				<div class="logo"><img src="img/logo.png"></div>
+				<div class="top_navigation_right">
+					<a class="book" href="#">book an appointment</a><span class="slash">/</span> 
+					<a href="https://sarahazman.github.io">back to portfolio</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="info">
+			<div class="title">
+				<h1>Invest in your hair. It's the crown on your head you never take off.</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+
+		<div class="color">
+			<div class="quote"><p>It's not just a hair color, it's a state of mind.</p></div>
+			<div class="color_img"><img src="img/pexels_matheushenrin.jpg"></div>
+		</div>
+
+		<!-- Client testimonials -->
+		<div class="testimonials">
+			<div class="testimonial_title"><h1>Client Testimonials</h1></div>
+			<div class="reviews">
+				<img src="img/pexels_neemiassearas.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div class="reviews">
+				<img src="img/pexels_ikelouisnatividad.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div class="reviews">
+				<img src="img/pexels_cottonbro.jpg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</div>
+		<!-- End of client testimonials -->
+
+		<!--<script src="https://kit.fontawesome.com/efc5216b12.js" crossorigin="anonymous"></script>-->
+		<script>
+			$(window).resize(function() {
+  				if ($(window).width() <= 786) {
+    				$('.quote').remove().insertAfter($('.color_img'));
+  				} else {
+    				$('.quote').remove().insertBefore($('.color_img'));
+  				}
+			})
+		</script>
+	</body>
+</html>
