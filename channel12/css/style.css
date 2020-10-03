@@ -221,6 +221,7 @@ input[type=checkbox] { display: none; }
 	border: none;
 	border-radius: 30px;
 	background-color: white;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 	color: #a47345;
 	display: inline-block;
 	font-family: 'Inconsolata', monospace;
