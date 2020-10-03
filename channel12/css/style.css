@@ -26,21 +26,16 @@ input[type=checkbox] { display: none; }
 	height: 100%;
 	position: fixed;
 	background-color: white;
-	box-shadow: 0em 0em 0em 1.5em #ffc0b1 inset;
+	box-shadow: 0em 0em 0em 1em #ffc0b1 inset;
 	transform: translateX(-400px);
 }
 
 #menu ul {
 	padding: 20%;
-	font-size: 30px;
-	line-height: 2.5;
+	font-size: 20px;
+	line-height: 4;
 	text-align: center;
 	text-transform: uppercase;
-}
-
-#menu li:first-child {
-	font-size: 20px;
-	margin-bottom: 5%;
 }
 
 .home {
@@ -152,7 +147,7 @@ input[type=checkbox] { display: none; }
 
 .fa-dollar-sign { display: inline-block; }
 
-.testimonials { height: 100%; text-align: center; }
+.testimonials { height: auto; text-align: center; }
 
 .testimonial_title {
 	border-top: 5px dotted #ea9a62;
@@ -189,6 +184,37 @@ input[type=checkbox] { display: none; }
 	background-color: #ffd9b5;
 }
 
+/* Footer */
+.footer {
+	background-color: #ffecda;
+	height: 40%;
+}
+
+.section_wrapper {
+	text-align: left;
+	padding-left: 10%;
+}
+
+.section_logo {
+	padding: 3% 5% 0 10%%;
+}
+
+.section_logo img { width: 100px; height: auto; }
+
+.section h2 { font-size: 13px; letter-spacing: 2pt; text-transform: uppercase; }
+.section li { font-size: 13px; line-height: 3; }
+
+.section {
+	width: 20%;
+	display: inline-block;
+	padding-top: 3%;
+	vertical-align: top;
+}
+
+.footer p { font-size: 11px; }
+
+/* End of footer */
+
 .btn {
 	border: none;
 	border-radius: 30px;
@@ -209,12 +235,14 @@ input[type=checkbox] { display: none; }
 	color: #a47345;
 }
 
+.btn_book { background-color: #ffd9b5; }
+
 /* When the screen is less than 768 pixels wide, move favicons and logo to sidebar menu. Hides navigation bar. */
 @media screen and (max-width: 768px) {
 
 	.top_navigation { padding: 6% 1%; }
 
-	.book, .slash, .logo { display: none; }
+	.btn_book, .logo { display: none; }
 
 	input[type="checkbox"]:checked ~ #menu {
     	transform: translateX(0);
@@ -295,29 +323,49 @@ input[type=checkbox] { display: none; }
 
 	#menu { transition: transform 400ms ease-in-out; }
 
-	.info, .testimonials, .reviews, .quote { height: 100%; }
+	.info, .reviews, .quote { height: 100%; }
 	.info h1 { font-size: 24px; }
-	.info p { font-size: 14px; text-align: left; margin: 10% 15%; }
+	.info p {
+		font-size: 14px;
+		text-align: left;
+		margin: 10% 15%;
+	}
 
 	.quote, .color_img, .reviews, .benefits { width: 100%; }
 	.quote p { text-align: center; padding: 5% 15%; }
+
 	.color { height: 100%;, position: absolute; }
-	.color_img { height: auto; }
+	.color_button { padding: 15%; text-align: center; }
+	.color_img, .testimonials { height: auto; }
 	.color_img img { padding: 0; width: 100%; }
 
-	.testimonial_title { height: 10%; display: inline-block; }
+	.testimonial_title {
+		height: 10%;
+		display: inline-block;
+	}
 
 	.reviews { padding: 0; }
 	.reviews img, .reviews p { padding: 5% 10%; }
-	.name { margin: 5% 10%; }
+	.name { margin: 0 10% 15%; }
 
-	.why { height: auto; padding: 15%; float: left; }
+	.why {
+		height: auto;
+		padding: 5% 15%;
+		float: left;
+	}
 	
 	.icon { display: none; }
 	.benefits h1 { font-size: 20px; }
-	.benefits p {
-		font-size: 14px;
-		padding: 0 0 10% 0;
+	.benefits p { font-size: 14px; padding: 0 0 10% 0; }
+
+	.footer {
+		height: auto;
+		float: left;
+		width: 100%;
 	}
+	.footer_fixed { text-align: center; }
+
+	.section, .section_logo { display: none; }
+	.section_wrapper { padding: 0; }
 
 }
