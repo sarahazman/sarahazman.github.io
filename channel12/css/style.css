@@ -134,6 +134,27 @@ input[type=checkbox] { display: none; }
 
 .reviews p { text-align: justify; }
 
+.name {
+	float: right;
+	font-family: 'Inconsolata', monospace;
+	background-color: #ffd9b5;
+}
+
+.btn_info {
+	border: none;
+	border-radius: 30px;
+	background-color: white;
+	color: #a47345;
+	display: inline-block;
+	font-family: 'Inconsolata', monospace;
+	font-size: 16px;
+	padding: 15px 32px;
+	margin: 4px 2px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 /* When the screen is less than 768 pixels wide, move favicons and logo to sidebar menu. Hides navigation bar. */
 @media screen and (max-width: 768px) {
 
@@ -220,13 +241,17 @@ input[type=checkbox] { display: none; }
 
 	#menu { transition: transform 400ms ease-in-out; }
 
-	.info, .color, .quote, .color_img, .testimonials, .reviews { height: 100%; }
+	.info, .quote, .testimonials, .reviews { height: 100%; }
 	.quote, .color_img, .reviews { width: 100%; }
 	.quote p { text-align: center; padding: 15%; }
+	.color { height: 100%;, position: relative; }
+	.color_img { height: auto; position: relative; }
 	.color_img img { padding: 0; width: 100%; }
 
-	.testimonial_title { padding: 0; margin: 0; }
+	.testimonial_title { height: 10%; display: inline-block; }
+
 	.reviews { padding: 0; }
 	.reviews img, .reviews p { padding: 5% 10%; }
+	.name { margin: 5% 10%; }
 
 }
