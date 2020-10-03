@@ -285,11 +285,11 @@ input[type=checkbox] { display: none; }
 
 	#menu { transition: transform 400ms ease-in-out; }
 
-	.info, .quote, .testimonials, .reviews { height: 100%; }
-	.quote, .color_img, .reviews { width: 100%; }
+	.info, .testimonials, .reviews { height: 100%; }
+	.quote, .color_img, .reviews, .benefits { width: 100%; }
 	.quote p { text-align: center; padding: 15%; }
-	.color { height: 100%;, position: relative; }
-	.color_img { height: auto; position: relative; }
+	.color { height: 100%;, position: absolute; }
+	.quote, .color_img { height: auto; }
 	.color_img img { padding: 0; width: 100%; }
 
 	.testimonial_title { height: 10%; display: inline-block; }
@@ -297,5 +297,14 @@ input[type=checkbox] { display: none; }
 	.reviews { padding: 0; }
 	.reviews img, .reviews p { padding: 5% 10%; }
 	.name { margin: 5% 10%; }
+
+	.why { height: auto; padding: 15%; float: left; }
+	.why h1 { font-size: 16px; }
+	
+	.icon { display: none; }
+	.benefits h1 { font-size: 22px; }
+	.benefits p {
+		padding: 0 0 10% 0;
+	}
 
 }
