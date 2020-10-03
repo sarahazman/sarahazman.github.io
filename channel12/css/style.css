@@ -105,11 +105,54 @@ input[type=checkbox] { display: none; }
 	padding: 10%;
 }
 
+.why { height: 120%; background-color: #ea9a62; }
+.why h1 {
+	padding: 5% 0 7%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2pt;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.benefits-row { width: 100%; text-align: center; }
+
+.icon { width: 7%; display: inline-block; }
+.fas {
+	color: #ffd9b5;
+	font-size: 36px;
+	font-weight: bold;
+	vertical-align: text-top;
+}
+
+.benefits {
+	width: 30%;
+	display: inline-block;
+	padding: 0 3% 3% 0;
+	text-align: left;
+	vertical-align: text-top;
+}
+
+.benefits h1 {
+	font-size: 26px;
+	letter-spacing: 0;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	text-transform: none;
+}
+
+.benefits p { padding-right: 10%; line-height: 1.7; }
+
+.fa-dollar-sign { display: inline-block; }
+
 .testimonials { height: 100%; text-align: center; }
 
 .testimonial_title {
 	border-top: 5px dotted #ea9a62;
 	border-bottom: 5px dotted #ea9a62;
+	margin-top: 5%;
 	padding: 3%;
 	text-align: center;
 }
@@ -125,6 +168,7 @@ input[type=checkbox] { display: none; }
 	width: 20%;
 	display: inline-block;
 	padding: 5%;
+	vertical-align: top;
 }
 
 .reviews img {
