@@ -68,7 +68,7 @@ input[type=checkbox] { display: none; }
 
 .info {
 	background-color: #ffd9b5;
-	height: 40%;
+	height: 50%;
 	padding: 7%;
 	text-align: center;
 }
@@ -81,7 +81,10 @@ input[type=checkbox] { display: none; }
 
 .info p {
 	margin: 5% 15%;
+	line-height: 2;
 }
+
+.title { padding: 7%; }
 
 .color { height: 100%; background: white; }
 
@@ -91,8 +94,10 @@ input[type=checkbox] { display: none; }
 	font-family: 'Poppins', sans-serif;
 	font-size: 46px;
 	font-weight: bold;
-	padding: 20%;
+	padding: 20% 20% 5% 20%;
 }
+
+.color_button { padding-left: 20%; }
 
 .color_img {
 	width: 50%;
@@ -109,7 +114,7 @@ input[type=checkbox] { display: none; }
 .why h1 {
 	padding: 5% 0 7%;
 	font-family: 'Poppins', sans-serif;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: bold;
 	letter-spacing: 2pt;
 	text-align: center;
@@ -184,7 +189,7 @@ input[type=checkbox] { display: none; }
 	background-color: #ffd9b5;
 }
 
-.btn_info {
+.btn {
 	border: none;
 	border-radius: 30px;
 	background-color: white;
@@ -197,6 +202,11 @@ input[type=checkbox] { display: none; }
 	text-align: center;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.btn_color {
+	background-color: #ffd9b5;
+	color: #a47345;
 }
 
 /* When the screen is less than 768 pixels wide, move favicons and logo to sidebar menu. Hides navigation bar. */
@@ -285,11 +295,14 @@ input[type=checkbox] { display: none; }
 
 	#menu { transition: transform 400ms ease-in-out; }
 
-	.info, .testimonials, .reviews { height: 100%; }
+	.info, .testimonials, .reviews, .quote { height: 100%; }
+	.info h1 { font-size: 24px; }
+	.info p { font-size: 14px; text-align: left; margin: 10% 15%; }
+
 	.quote, .color_img, .reviews, .benefits { width: 100%; }
-	.quote p { text-align: center; padding: 15%; }
+	.quote p { text-align: center; padding: 5% 15%; }
 	.color { height: 100%;, position: absolute; }
-	.quote, .color_img { height: auto; }
+	.color_img { height: auto; }
 	.color_img img { padding: 0; width: 100%; }
 
 	.testimonial_title { height: 10%; display: inline-block; }
@@ -299,11 +312,11 @@ input[type=checkbox] { display: none; }
 	.name { margin: 5% 10%; }
 
 	.why { height: auto; padding: 15%; float: left; }
-	.why h1 { font-size: 16px; }
 	
 	.icon { display: none; }
-	.benefits h1 { font-size: 22px; }
+	.benefits h1 { font-size: 20px; }
 	.benefits p {
+		font-size: 14px;
 		padding: 0 0 10% 0;
 	}
 
