@@ -146,6 +146,7 @@ input[type=checkbox] { display: none; }
 .benefits p { padding-right: 10%; line-height: 1.7; }
 
 .fa-dollar-sign { display: inline-block; }
+.fab { font-size: 20px; margin-right: 10px; }
 
 .testimonials { height: auto; text-align: center; }
 
@@ -211,7 +212,8 @@ input[type=checkbox] { display: none; }
 	vertical-align: top;
 }
 
-.footer p { font-size: 11px; }
+.footer_fixed p { font-size: 11px; padding-top: 2%; }
+.socials { float: right; padding-right: 10%; }
 
 /* End of footer */
 
@@ -364,6 +366,8 @@ input[type=checkbox] { display: none; }
 		width: 100%;
 	}
 	.footer_fixed { text-align: center; }
+
+	.socials { display: none; }
 
 	.section, .section_logo { display: none; }
 	.section_wrapper { padding: 0; }
