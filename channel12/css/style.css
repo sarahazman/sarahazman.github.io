@@ -148,6 +148,52 @@ input[type=checkbox] { display: none; }
 .fa-dollar-sign { display: inline-block; }
 .fab { font-size: 20px; margin-right: 10px; }
 
+.products, .order { height: 100%; background-color: white; }
+.product_img {
+	float: left;
+	width: 60%;
+	text-align: center;
+}
+
+.product_desktop { display: block; }
+.product_mobile { display: none; }
+
+.product_img img {
+	width: 700px;
+	height: auto;
+	padding: 15% 10% 10% 10%;
+}
+
+.product_desc {
+	float: right;
+	width: 30%;
+	text-align: center;
+	padding-top: 15%;
+	padding-right: 7%;
+}
+
+.product_desc h1 { font-size: 36px; }
+.product_desc p , .order_desc p { line-height: 2; }
+
+.order_desc {
+	float: left;
+	width: 30%;
+	text-align: center;
+	padding: 10%;
+}
+
+.order_img {
+	float: right;
+	width: 50%;
+	text-align: center;
+}
+
+.order_img img {
+	height: 600px;
+	width: auto;
+	padding-top: 5%;
+}
+
 .testimonials { height: auto; text-align: center; }
 
 .testimonial_title {
@@ -183,6 +229,40 @@ input[type=checkbox] { display: none; }
 	float: right;
 	font-family: 'Inconsolata', monospace;
 	background-color: #ffd9b5;
+}
+
+.subscribe {
+	height: 30%;
+	text-align: center;
+}
+
+.subscribe h1 { padding-bottom: 3%; }
+
+input[type="text"] {
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	width: 30%;
+	padding: 12px 12px 12px 0;
+	margin-bottom: 12px;
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid #a47345;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+input[type="submit"] {
+	font-family: 'Inconsolata', monospace;
+	color: #a47345;
+	background-color: #ffd9b5;
+	border-radius: 30px;
+	border: 2px solid white;
+	padding: 16px 32px;
+	cursor: pointer;
+}
+
+input:focus {
+	outline: none;
 }
 
 /* Footer */
@@ -233,12 +313,12 @@ input[type=checkbox] { display: none; }
 	cursor: pointer;
 }
 
-.btn_color {
+.btn_color, .btn_book, .btn_order {
 	background-color: #ffd9b5;
 	color: #a47345;
 }
 
-.btn_book { background-color: #ffd9b5; }
+.btn_shop { background-color: #ffecda; }
 
 /* When the screen is less than 768 pixels wide, move favicons and logo to sidebar menu. Hides navigation bar. */
 @media screen and (max-width: 768px) {
@@ -360,6 +440,43 @@ input[type=checkbox] { display: none; }
 	.icon { display: none; }
 	.benefits h1 { font-size: 20px; }
 	.benefits p { font-size: 14px; padding: 0 0 10% 0; }
+
+	.product_img, .order_img {
+		padding: 0;
+		width: 100%;
+		height: auto;
+	}
+
+	.product_desktop { display: none; }
+	.product_mobile { display: block; }
+
+	.product_img img, .order_img img {
+		padding: 0;
+		width: 100%;
+		height: auto;
+	} 
+
+	.product_desc {
+		float: left;
+		width: 80%;
+		height: 100%;
+		padding: 30% 10% 0 10%;
+	}
+	.order_desc {
+		width: 80%;
+		height: 100%;
+		padding: 30% 10% 0 10%;
+	}
+
+	.subscribe { float: left; height: 50%; }
+
+	.subscribe h1 { font-size: 24px; }
+
+	form { padding: 5%; }
+
+	input[type="text"] {
+		width: 100%;
+	}
 
 	.footer {
 		height: auto;
