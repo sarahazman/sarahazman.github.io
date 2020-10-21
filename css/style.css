@@ -1,62 +1,158 @@
-html, body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+li, a {
+	color: black;
+	text-decoration: none;
+	font-family: 'Montserrat', sans-serif;
 }
 
 ul, li {
-	list-style-type: none;
+	list-style: none;
 	padding: 0;
 }
 
-.navbar {
-	font-size: 16px;
+header {
 	display: flex;
-	margin-bottom: 10px;
-	padding: 0;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 1.5em 2.5em;
+}
+
+.logo {
+	margin-right: auto;
+}
+
+.nav_links { list-style: none; }
+
+.nav_links li {
+	display: inline-block;
+	letter-spacing: 1pt;
+	padding: 0px 20px;
+}
+
+.nav_links li a:after {    
+	content: "";
+	margin-top: 5px;
+	display: block;
+	height: 5px;
+	background: blue;
+	transition: width 0.75s ease 0s, left 0.75s ease 0s;
+	width: 0;
+}
+
+.nav_links li a:hover::after { 
 	width: 100%;
 }
 
-.navbar a:link {
-	color: black;
-	text-decoration: none;
+.active {
+	color: blue;
 }
 
-.navbar a:hover {
-	border-bottom: 3px solid #000;
-	padding-bottom: 4px;
-	transition: ease-in 0.25s;
+/* Mobile nav*/
+/*.overlay {
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	overflow-x: hidden;
+}*/
+
+.overlay_menu {
+	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.navbar li:first-child {
-	padding-left: 10px;
- 	margin-right: auto;
+.overlay a {
+	text-transform: uppercase;
+	font-size: 22px;
+	letter-spacing: 1pt;
+	padding: 3em;
+	display: none;
 }
 
-.main {
+#mobile_menu { display: none; }
+
+/* End of Mobile nav*/
+
+.work {
 	height: 100%;
 }
 
-.links {
-	font-size: 70px;
+.work_links {
+	margin-top: 20px;
+	font-size: 80px;
 	text-align: center;
 	text-transform: uppercase;
 	color: white;
-	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: #1e166b;
 }
 
-.links a:link {
+.work_links a:link {
 	color: white;
 	text-decoration: none;
 }
 
-.links a:hover {
+.work_links a:hover {
 	color: #ed7124;
 }
 
-.plus a:link {
+/* Project descriptions */
+.project {
+	min-height: 500px;
+	display: grid;
+	grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+	grid-column-gap: 40px;
+	align-items: center;
+	padding: 50px;
+}
+
+.project_title {
+	grid-column-start: 3;
+	grid-column-end: span 12;
+	font-family: 'Poppins', sans-serif;
+	color: #ed7124;
+}
+
+.project_desc {
+	grid-column-start: 3;
+	grid-column-end: span 6;
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	font-family: 'Poppins', sans-serif;
+}
+
+.project_header {
+	grid-column-start: 3;
+	grid-column-end: span 1;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+.project_info {
+	grid-column-start: 4;
+	grid-column-end: span 4;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
+
+/*.plus a:link {
 	text-decoration: none;
 }
 
@@ -123,15 +219,49 @@ ul, li {
 
 .fa-envelope:before {
 	color: #ed7124;
-}
+}*/
 
-@media screen and (max-width: 736px) {
-	.links {
+@media screen and (max-width: 786px) {
+	.toggle {
+		cursor: pointer;
+		display: block;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 30px;
+		height: 3px;
+		background-color: blue;
+		margin: 6px 0px;
+		transition: all 0.4s ease 0s;
+	}
+
+	.change .bar1 {
+  		-webkit-transform: rotate(-45deg) translate(-4px, 5px);
+  		transform: rotate(-45deg) translate(-4px, 5px);
+	}
+
+	.change .bar2 { opacity: 0; }
+
+	.change .bar3 {
+  		-webkit-transform: rotate(45deg) translate(-8px, -9px);
+  		transform: rotate(45deg) translate(-8px, -9px);
+	}
+
+	.logo, .nav_links { display: none; }
+
+	/*.overlay {
+    	top: 15px;
+    	right: 35px;
+	}*/
+
+	.overlay a { display: block; }
+
+	.work_links {
 		font-size: 40px;
 		line-height: 1.7;
 	}
 
-	.about {
+	/*.about {
 		padding: 2em;
 	}
 
@@ -154,5 +284,6 @@ ul, li {
 
 	.contact p {
 		padding-top: 10em;
-	}
+	}*/
+
 }
