@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Projects | SARAH AZMAN</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<a class="logo" href="#">sarah azman</a>
+			<nav>
+				<ul class="nav_links">
+					<li><a class="active" href="projects/projects.html">projects</a></li>
+					<li><a href="#">contact</a></li>
+				</ul>
+			</nav>
+			<div class="toggle">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</header>
+		<div id="mobile_menu" class="overlay">
+			<div class="overlay_menu">
+				<a href="#">Home</a>
+				<a href="#">Projects</a>
+				<a href="#">Contact</a>
+			</div>
+		</div>
+
+		<div class="work">
+			<ul class="work_links">
+				<li><a href="https://sarahazman.github.io/channel12">Channel 12</a></li>
+				<li><a href="clg/index.html">Online Banking Group</a></li>
+				<li><a href="https://isproj2b.benilde.edu.ph/DIANNE">Dianne*</a></li>
+			</ul>
+		</div>
+		<script>
+			$(".toggle").click(function(){
+    			$(this).toggleClass("change");
+    			$("#mobile_menu").fadeToggle(400);
+			});
+
+			/*$('.navbar a').on('click', function(e) {
+  				var href = $(this).attr('href');
+  				$('html, body' ).animate({
+					scrollTop: $( href ).offset().top
+  				}, '1200');
+  				e.preventDefault();
+			});
+
+			$('.plus a').on('click', function(e) {
+  				var href = $(this).attr('href');
+  				$('html, body' ).animate({
+					scrollTop: $( href ).offset().top
+  				}, '1200');
+  				e.preventDefault();
+			});*/
+		</script>
+	</body>
+</html>
