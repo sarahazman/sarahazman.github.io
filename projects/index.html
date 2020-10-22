@@ -17,12 +17,12 @@
 					<li><a href="#">contact</a></li>
 				</ul>
 			</nav>
-			<div class="toggle">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
 		</header>
+		<div class="toggle">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
 		<div id="mobile_menu" class="overlay">
 			<div class="overlay_menu">
 				<a href="https://sarahazman.github.io">Home</a>
@@ -42,6 +42,7 @@
 			$(".toggle").click(function(){
     			$(this).toggleClass("change");
     			$("#mobile_menu").fadeToggle(400);
+    			document.getElementByClass("work").style.display = "none";
 			});
 
 			/*$('.navbar a').on('click', function(e) {
