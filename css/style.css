@@ -59,6 +59,9 @@ header {
 	color: blue;
 }
 
+.on-mobile { display: none; }
+.on-desktop { display: inline; }
+
 .main {
 	height: 100vh;
 	padding: 7em 8em 0 8em;
@@ -379,6 +382,9 @@ header {
 	}
 
 	.logo, .nav_links { display: none; }
+
+	.on-mobile { display: inline; }
+	.on-desktop { display: none; }
 
 	.overlay_menu, .overlay_menu a { visibility: visible; }
 
