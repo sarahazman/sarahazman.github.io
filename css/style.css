@@ -321,11 +321,12 @@ header {
 
 	.main {
 		width: 100vw;
-		padding: 3em 1em 0 3em;
+		padding: 7em 1em 0 3em;
 	}
 
 	.main h1 {
-		font-size: 40px;
+		font-size: 80px;
+		line-height: 1.5cm;
 	}
 
 	.toggle {
