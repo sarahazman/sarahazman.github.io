@@ -148,7 +148,7 @@ header {
 
 .work_links {
 	padding-top: 1em;
-	font-size: 80px;
+	font-size: 70px;
 	text-align: center;
 	text-transform: uppercase;
 	color: white;
@@ -383,8 +383,8 @@ header {
 
 	.logo, .nav_links { display: none; }
 
-	.on-mobile { display: inline; }
-	.on-desktop { display: none; }
+	/*.on-mobile { display: inline; }
+	.on-desktop { display: none; }*/
 
 	.overlay_menu, .overlay_menu a { visibility: visible; }
 
