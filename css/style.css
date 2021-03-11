@@ -319,10 +319,9 @@ header {
 
 	header { display: none; }
 
-	/*.main {
-		height: 70%;
-		padding-top: 3em;
-	}*/
+	.main {
+		width: 100vw;
+	}
 
 	.main h1 {
 		font-size: 30px;
