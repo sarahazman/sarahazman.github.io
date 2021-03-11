@@ -337,12 +337,14 @@ header {
 
 	.main {
 		width: 100vw;
-		padding: 3em 1em 0 3em;
+		padding: 3em 2em 0 3em;
 	}
 
 	.main h1 {
-		width: 100vw;
-		font-size: 40px;
+		width: 100%;
+		font-size: 60px;
+		line-height: 1cm;
+		padding-top: 2em;
 		transition: none;
 	}
 
