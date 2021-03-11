@@ -319,6 +319,15 @@ header {
 
 	header { display: none; }
 
+	/*.main {
+		height: 70%;
+		padding-top: 3em;
+	}*/
+
+	.main h1 {
+		font-size: 50px;
+	}
+
 	.toggle {
 		right: 0;
 		z-index: 1;
