@@ -3,18 +3,18 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>SARAH AZMAN</title>
+		<title>DIANNE | SARAH AZMAN</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="../css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<header>
-			<a id="logo" href="#" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></a>
+			<a class="logo" href="#">sarah azman</a>
 			<nav>
 				<ul class="nav_links">
 					<li><a href="#work2">projects</a></li>
-					<li><a href="#contact2">contact</a></li>
+					<li><a href="#">contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -30,23 +30,35 @@
 				<a href="#">Contact</a>
 			</div>
 		</div>
-		<div class="main" id="main">
-			<h1>sarah azman</h1>
-			<h3>web developer <span style="font-weight: normal;">and</span> business analyst</h3>
-			<hr>
-			<p><b>90% design & development + 10% musings</b>
-				<br>I break websites, but sometimes I create them too. Check out my portfolio of both personal and professional work!
-				<br><br>Based in Manila, Philippines.</p>
-		</div>
-		<div class="work">
-			<h1 id="work2">Projects</h1>
-			<div class="work_links">
-				<a href="#"><span style="color: #1e166b">#1</span> Dianne</a><br>
-				<a href="https://sarahazman.github.io/clg"><span style="color: #1e166b">#2</span> Online Banking Group</a>
+		<!-- CLG-->
+		<section class="project">
+			<h1 class="project_title">DIANNE - Your Wedding Planner Assistant</h1>
+			<div class="project_desc">
+				<p><i>Dianne</i> is my thesis project wherein</p>
+			</div>
+			<div class="project_header">
+				<p>YEAR</p>
+				<p>TEAM</p>
+				<p>TOOLS</p>
+			</div>
+			<div class="project_info">
+				<p>2019</p>
+				<p>De La Salle-College of Saint Benilde</p>
+				<p>Laravel</p>
+			</div>
+		</section>
+
+		<section class="details">
+			
+		</section>
+		<!-- End of CLG -->
+		<!--<div class="main">
+			<div class="plus">
+				<h1><a href="#about2">+</a></h1>
 			</div>
 		</div>
 
-		<!--<div class="about" id="about2">
+		<div class="about" id="about2">
 			<div class="left-div">
 				<img src="https://i.ibb.co/tJG4NBC/pic2.png" width=600 height="auto">
 			</div>
@@ -56,41 +68,22 @@
 				<p>With a background in web design and development, Sarah graduated from Class 2020 at De La Salle-College of Saint Benilde with a Bachelor's Degree in Information Systems. She has taken up internships at Orange & Bronze Software Labs, where she developed her QA skills.</p>
 				<p>In her free time, Sarah enjoys taking long walks, listening to music, and playing 90's J-RPG video games.</p>
 			</div>
-		</div>-->
+		</div>
 		<div class="contact" id="contact2">
 			<p>shoot me a message!</p>
-			<h1><u>azmansarahaniyah@gmail.com</u></h1>
+			<h1>azmansarahaniyah@gmail.com</h1>
 			<span style="font-size: 50px; color: #ed7124">
 				<i class="fas fa-envelope"></i><span style="margin-right: 1em"></span>
 				<a href="https://www.linkedin.com/in/sarah-aniyah-azman"><i class="fab fa-linkedin-in"></i></a>
 			</span>
-			<div class="footnote">
-				<p>2020 — Sarah Azman®</p>
-			</div>
 		</div>
 
-		<script src="https://kit.fontawesome.com/efc5216b12.js" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/efc5216b12.js" crossorigin="anonymous"></script>-->
 		<script>
 			$(".toggle").click(function(){
     			$(this).toggleClass("change");
     			$("#mobile_menu").fadeToggle(400);
 			});
-
-			$(window).on('hashchange', function(e) {
-    			history.replaceState ("", document.title, e.originalEvent.oldURL);
-			});
-
-			window.onscroll = function() {
-    			if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-    				document.getElementById("logo").style.display = "block";
-    			} else {
-    				document.getElementById("logo").style.display = "none";
-    			}
-			};
-			function scrollToTop() {
-    			document.body.scrollTop = 0; // For Safari
-    			document.documentElement.scrollTop = 0; // For Chrome, Firefox and Opera
-			}
 
 			/*$('.navbar a').on('click', function(e) {
   				var href = $(this).attr('href');
