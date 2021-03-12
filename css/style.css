@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins&family=Roboto+Mono&display=swap');
 
 * {
 	margin: 0;
@@ -76,23 +76,25 @@ header {
 .main {
 	height: 100vh;
 	padding: 7em 8em 0 8em;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .main h1 {
 	width: 400px;
 	line-height: 3cm;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 170px;
 	font-weight: bold;
 	transition: 1s;
 }
 
 .main h1:hover {
+	font-family: 'Montserrat', sans-serif;
 	color: blue;
 	text-shadow: blue 0 0 15px;
 }
 
 .main h3 {
+	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	letter-spacing: 1.5px;
 	margin-top: 40px;
@@ -104,8 +106,9 @@ header {
 }
 
 .main p {
+	font-family: 'Poppins', sans-serif;
 	width: 300px;
-	margin-top: 6%;
+	margin-top: 4%;
 	font-size: 14px;
 	font-weight: normal;
 }
@@ -144,13 +147,13 @@ header {
 
 /* End of Mobile nav*/
 
-.work {
+.work, .about {
 	height: 100vh;
 }
 
 .work h1 {
-	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 2pt;
+	font-family: 'Roboto Mono', monospace;
+	letter-spacing: 5pt;
 	padding: 5em 0 2em 0;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -268,6 +271,15 @@ header {
 	align-self: flex-start;
 }
 
+.about h1 {
+	font-family: 'Roboto Mono', monospace;
+	letter-spacing: 5pt;
+	padding: 5em 0 2em 0;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
 /*.plus a:link {
 	text-decoration: none;
 }
@@ -279,38 +291,20 @@ header {
 .plus h1 {
 	text-align: center;
 	font-size: 120px;
-}
-
-.about {
-	text-align: center;
-	font-size: 16px;
-	padding-top: 4em;
-}
-
-.left-div {
-	display: inline-block;
-  	max-width: 600px;
-  	margin: 15px;
-  	vertical-align: top;
-}
-
-.right-div {
-  display: inline-block;
-  max-width: 400px;
-  text-align: justify;
-  margin: 15px;
-}
-
-.right-div h1 {
-	font-size: 50px;
-	color: #ed7124;
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: #1e166b;
-}
-
-.right-div p {
-	font-family: 'Poppins', sans-serif;
 }*/
+
+.row { display: flex; }
+
+.column {
+  flex: 50%;
+  width: 400px;
+  padding: 5em 0 0 7em;
+}
+
+.column p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+}
 
 .contact {
 	height: 50vh;
