@@ -419,6 +419,10 @@ header {
 		align-items: center;
 	}
 
+	.mobile_work {
+		padding-top: 2em;
+	}
+
 	.work_links {
 		font-size: 35px;
 		line-height: 1.7;
