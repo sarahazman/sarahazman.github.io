@@ -74,8 +74,6 @@
 
 		<script src="https://kit.fontawesome.com/efc5216b12.js" crossorigin="anonymous"></script>
 		<script>
-			AOS.init();
-
 			$(".toggle").click(function(){
     			$(this).toggleClass("change");
     			$("#mobile_menu").fadeToggle(400);
@@ -96,6 +94,8 @@
     			document.body.scrollTop = 0; // For Safari
     			document.documentElement.scrollTop = 0; // For Chrome, Firefox and Opera
 			}
+
+			AOS.init();
 
 			/*$('.navbar a').on('click', function(e) {
   				var href = $(this).attr('href');
