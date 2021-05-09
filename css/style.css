@@ -197,9 +197,20 @@ header {
 }
 
 .projects-view {
-	margin-top: 3em;
+	font-family: var(--secondary-font);
 	font-weight: bold;
+	margin-top: 3em;
 	text-transform: uppercase;
+	letter-spacing: 1px;
+	-webkit-transition: all .1s ease-in;
+	-moz-transition: all .1s ease-in;
+	-ms-transition: all .1s ease-in;
+	-o-transition: all .1s ease-in;
+	transition: all .1s ease-in;
+}
+
+.projects-view:hover {
+	letter-spacing: 0.2em;
 }
 
 .projects-image {
