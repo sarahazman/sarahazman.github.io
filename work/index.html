@@ -5,9 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Sarah Azman</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="../css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>-->
 	</head>
 	<body>
 		<div class="fixed-body">
@@ -32,11 +33,20 @@
 				</nav>
 			</header>
 		
-			<div class="container">
-				<video class="bottle-responsive" width="630" height="630" loop autoplay muted>
-  					<source src="img/transparent.mp4" type="video/mp4">
-				</video>
-				<h1>Web designer & developer based in Manila, Philippines.</h1>
+			<div class="cursor"></div>
+			<div class="wrapper">
+				<div class="project-list">
+					<div class="project p-1">
+						<div class="project-title"><h1>Dauntless Creative Labs</h1></div>
+						<div class="project-year">2021</div>
+						<div class="project-overlay"></div>
+					</div>
+					<div class="project p-2">
+						<div class="project-title"><h1>Dianne</h1></div>
+						<div class="project-year">2019</div>
+						<div class="project-overlay"></div>
+					</div>
+				</div>
 			</div>
 
 			<footer>
@@ -68,6 +78,35 @@ var speed = 5000;
         });
         requestAnimationFrame(currencySlide);
 })();
+
+ var $cursor = $(".cursor"),
+        $overlay = $(".project-overlay");
+
+      function moveCircle(e) {
+        TweenLite.to($cursor, 0.5, {
+          css: {
+            left: e.pageX,
+            top: e.pageY
+          },
+          delay: 0.03
+        });
+      }
+
+      $(".p-1").hover(function() {
+        $(".cursor").css({ "background-image": "url(../img/neon.jpg)" });
+      });
+
+      var flag = false;
+      $($overlay).mousemove(function() {
+        flag = true;
+        TweenLite.to($cursor, 0.3, { scale: 1, autoAlpha: 1 });
+        $($overlay).on("mousemove", moveCircle);
+      });
+
+      $($overlay).mouseout(function() {
+        flag = false;
+        TweenLite.to($cursor, 0.3, { scale: 0.1, autoAlpha: 0 });
+      });
 
 </script>
 </html>
