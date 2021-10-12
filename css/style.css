@@ -121,7 +121,7 @@ header {
 }
 
 
-.container h1 {
+h1.title {
 	position: absolute;
 	font-family: var(--main-font);
 	font-size: 7vw;
@@ -213,7 +213,7 @@ footer p {
 
 	.container { padding: 0 2em; flex-direction: column; }
 
-	h1 {
+	h1.title {
 		font-size: 34px;
 		letter-spacing: 0;
 		top: 0;

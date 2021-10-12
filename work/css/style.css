@@ -29,12 +29,6 @@ html {
 	overflow: hidden;
 }
 
-.fixed-body {
-	background-color: #000;
-	min-height: 100vh;
-	max-height: 100vh;
-}
-
 li, a {
 	color: white;
 	text-decoration: none;
@@ -110,31 +104,6 @@ header {
 	display: inline-block;
 	letter-spacing: 1pt;
 	padding: 0px 20px;
-}
-
-.container {
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 3em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-
-.container h1 {
-	position: absolute;
-	font-family: var(--main-font);
-	font-size: 7vw;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 5px;
-	margin: 0;
-}
-
-.bottle-responsive {
-	max-width: 100%;
-	height: auto;
 }
 
 /* WORK PAGE */
