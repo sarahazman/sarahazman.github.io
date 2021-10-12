@@ -26,7 +26,6 @@ html {
 	font-family: var(--main-font);
 	color: var(--main-font-color);
 	scroll-behavior: smooth;
-	overflow: hidden;
 }
 
 .fixed-body {
