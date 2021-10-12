@@ -102,9 +102,9 @@ header {
 	cursor: pointer;
 }
 
-.nav_links { list-style: none; }
+.nav_links, .footer_links { list-style: none; }
 
-.nav_links li {
+.nav_links li, .footer_links li {
 	font-size: 22px;
 	display: inline-block;
 	letter-spacing: 1pt;
@@ -119,18 +119,19 @@ header {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 3em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 h1 {
 	position: absolute;
-	top: 2em;
 	font-family: var(--main-font);
 	font-size: 7vw;
 	text-transform: uppercase;
 	text-align: center;
+	letter-spacing: 5px;
 }
-
-.bottle { text-align: center; }
 
 .bottle-responsive {
 	max-width: 100%;
@@ -159,5 +160,29 @@ footer p {
 	a:focus, div:focus {
     	outline: none; /* no outline - for most browsers */
     	box-shadow: none; /* no box shadow - for some browsers or if you are using Bootstrap */
+	}
+
+	.container { padding: 0 2em; flex-direction: column; }
+
+	h1 {
+		font-size: 34px;
+		letter-spacing: 0;
+		top: 0;
+		position: unset;
+	}
+
+	header { padding: 1em 2em; }
+
+	.logo {
+		font-size: 14px;
+		left: 30px;
+	}
+
+	header li, header a { font-size: 14px; }
+
+	.nav_links { padding-bottom: 10px; }
+	.nav_links li, .footer_links li { padding: 0px; }
+	.nav_links li:first-child {
+		padding: 0 20px;
 	}
 }
