@@ -206,7 +206,6 @@ footer p {
 	}
 
 	.cursor {
-		opacity: 0;
-		visibility: hidden;
+		display: none;
 	}
 }
