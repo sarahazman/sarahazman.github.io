@@ -46,7 +46,7 @@ ul, li {
 	padding: 0;
 }
 
-a:hover {
+a:hover, .active_link {
 	/* Fallback: Set a background color. */
   	background-color: #e4a3d1;
   
@@ -112,15 +112,6 @@ header {
 	padding: 0px 20px;
 }
 
-.container {
-	width: 100%;
-	margin: 0 auto;
-	padding: 0 3em;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
 /* WORK PAGE */
 
 .cursor {
@@ -151,7 +142,6 @@ header {
 	position: relative;
 	z-index: 2;
 	color: white;
-	mix-blend-mode: difference;
 }
 
 .project-title h1 {

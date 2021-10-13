@@ -27,7 +27,7 @@
 				<a class="logo" href="https://sarahazman.design">Sarah Azman</a>
 				<nav>
 					<ul class="nav_links">
-						<li><a href="#">Work</a></li>
+						<li><a class="active_link" href="https://sarahazman.design/work">Work</a></li>
 						<li><a href="#">Play</a></li>
 					</ul>
 				</nav>
@@ -79,8 +79,8 @@ var speed = 5000;
         requestAnimationFrame(currencySlide);
 })();
 
- var $cursor = $(".cursor"),
-        $overlay = $(".project-overlay");
+var $cursor = $(".cursor"),
+    $overlay = $(".project-overlay");
 
       function moveCircle(e) {
         TweenLite.to($cursor, 0.5, {
