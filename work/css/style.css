@@ -121,22 +121,6 @@ header {
 	justify-content: center;
 }
 
-
-.container h1 {
-	position: absolute;
-	font-family: var(--main-font);
-	font-size: 7vw;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 5px;
-	margin: 0;
-}
-
-.bottle-responsive {
-	max-width: 100%;
-	height: auto;
-}
-
 /* WORK PAGE */
 
 .cursor {
@@ -212,13 +196,8 @@ footer p {
     	-webkit-tap-highlight-color: transparent;
 	}
 
-	.container { padding: 0 2em; flex-direction: column; }
-
-	h1 {
-		font-size: 34px;
-		letter-spacing: 0;
-		top: 0;
-		position: unset;
+	.project-title h1 {
+		font-size: 20px;
 	}
 
 	header { padding: 1em 2em; }
