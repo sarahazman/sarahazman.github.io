@@ -3,11 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Sarah Azman</title>
+		<title>PLAY | Sarah Azman</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>-->
 	</head>
 	<body>
 		<div class="fixed-body">
@@ -27,16 +28,13 @@
 				<nav>
 					<ul class="nav_links">
 						<li><a href="https://sarahazman.design/work">Work</a></li>
-						<li><a href="https://sarahazman.design/play">Play</a></li>
+						<li><a class="active_link" href="https://sarahazman.design/play">Play</a></li>
 					</ul>
 				</nav>
 			</header>
 		
 			<div class="container">
-				<video class="bottle-responsive" width="630" height="630" loop autoplay muted>
-  					<source src="img/transparent.mp4" type="video/mp4">
-				</video>
-				<h1 class="title">Web designer & developer based in Manila, Philippines.</h1>
+				<h2>Hi, I'm Sarah and I'm a web designer and front-end developer based in Manila, Philippines. My background lies in manual software testing in web-based and client applications. This page is a dump for everything visual design that is not related to professional and client work. For any project inquiries, you can send me an <a class="underline" href="mailto:azmansarahaniyah@gmail.com">email</a>, or even message me on <a class="underline" href="https://twitter.com/disapparel">Twitter</a>!</h2>
 			</div>
 
 			<footer>
@@ -68,6 +66,5 @@ var speed = 5000;
         });
         requestAnimationFrame(currencySlide);
 })();
-
 </script>
 </html>

@@ -22,6 +22,10 @@
 	--orange-color: #ed7124;
 }
 
+::selection {
+	background: #eeaeca;
+}
+
 html {
 	font-family: var(--main-font);
 	color: var(--main-font-color);
