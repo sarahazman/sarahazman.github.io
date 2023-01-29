@@ -10,64 +10,71 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 	</head>
 	<body>
-		<div class="fixed-body">
-			<div class="position-relative marquee-container d-none d-sm-block">
-  				<div class="marquee">
-    				<span>azmansarahaniyah@gmail.com</span>
-    				<span>azmansarahaniyah@gmail.com</span>
-    				<span>azmansarahaniyah@gmail.com</span>
-    				<span>azmansarahaniyah@gmail.com</span>
-    				<span>azmansarahaniyah@gmail.com</span>
-    				<span>azmansarahaniyah@gmail.com</span>
-    				<span>azmansarahaniyah@gmail.com</span>
-  				</div>
-			</div>
+		<div>
 			<header>
-				<a class="logo" href="https://sarahazman.design">Sarah Azman</a>
+				<a class="logo" href="https://sarahazman.design">Sarah Azman — Frontend Web Developer & Designer</a>
 				<nav>
 					<ul class="nav_links">
-						<li><a href="https://sarahazman.design/work">Work</a></li>
-						<li><a href="https://sarahazman.design/play">Play</a></li>
+						<li>Work</li>
+						<li>Info</li>
 					</ul>
 				</nav>
 			</header>
 		
 			<div class="container">
-				<video class="bottle-responsive" width="630" height="630" loop autoplay muted>
-  					<source src="img/transparent.mp4" type="video/mp4">
-				</video>
-				<h1 class="title">Web designer & developer based in Manila, Philippines.</h1>
+				<div class="gap-top"></div>
+				<h1 class="title">A freelance web designer and developer based in Kuala Lumpur. I focus on helping e-commerce brands cut through the noise of the digital landscape with the use of stunning visual design.</h1>
+			</div>
+
+			<div class="main-work">
+				<ul class="main-work-wrapper">
+					<li><h2><a href="https://dauntlesscreativelabs.com">Dauntless Creative Labs</a><span class="launch-year">(2021)</span></h2></li>
+					<li><h2><a href="https://fkro.co">FKRŌ</a><span class="launch-year">(2022)</span></h2></li>
+					<li><h2><a href="https://www.bohocuddles.com">Boho Cuddle</a><span class="launch-year">(2022)</span></h2></li>
+					<li><h2>Silverstors Inc.<span class="launch-year">(IN PROGRESS)</span></h2></li>
+				</ul>
+				<!--
+				<div class="row">
+					<div class="col-70">
+						<img src="">
+					</div>
+					<div class="col-30">
+						<h2>FKRŌ<span class="launch-year">(2022)</span></h2>
+						<p>Selling organic ceremonial grade matcha powder from Uji, Japan.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-50">
+						<h2>Boho Cuddle<span class="launch-year">(2022)</span></h2>
+						<p>A female-owned small business selling comfortable and stylish apparel.</p>
+					</div>
+					<div class="col-50">
+						<img src="">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-20">
+						
+					</div>
+					<div class="col-60">
+						<img src="">
+					</div>
+					<div class="col-20">
+						<p>IN PROGRESS</p>
+						<h2>Silverstors Inc.</h2>
+						<p>A platform that provides precious metal at affordable premiums.</p>
+					</div>
+				</div>
+			    -->
 			</div>
 
 			<footer>
-				<!--<p>Model base by intranetgirl</p>-->
 				<nav>
 					<ul class="footer_links">
-						<li>© 2021</li>
+						<li>© 2023</li>
 					</ul>
 				</nav>
 			</footer>
 		</div>
 	</body>
-<script>
-// polyfill
-window.requestAnimationFrame = (function(){
-  return  window.requestAnimationFrame       ||
-          window.webkitRequestAnimationFrame ||
-          window.mozRequestAnimationFrame    ||
-          function( callback ){
-            window.setTimeout(callback, 1000 / 60);
-          };
-})();
-
-var speed = 5000;
-(function currencySlide(){
-    var currencyPairWidth = $('span:first-child').outerWidth();
-    $(".marquee").animate({marginLeft:-currencyPairWidth},speed, 'linear', function(){
-      $(this).css({marginLeft:0}).find("span:last").after($(this).find("span:first"));
-        });
-        requestAnimationFrame(currencySlide);
-})();
-
-</script>
 </html>
