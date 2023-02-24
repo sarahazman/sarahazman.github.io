@@ -120,9 +120,8 @@ header {
 
 h1.title {
 	font-family: var(--main-font);
-	font-size: 3vw;
+	font-size: 3.5vw;
 	font-weight: 500;
-	width: 60%;
 }
 
 h2 {
