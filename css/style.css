@@ -76,6 +76,11 @@ nav a:hover {
 	z-index: -1;
 }
 
+img.sticker {
+	width: 100px;
+	height: auto;
+}
+
 
 .nav_links, .footer_links { list-style: none; }
 
